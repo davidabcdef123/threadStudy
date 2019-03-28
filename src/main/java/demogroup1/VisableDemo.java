@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Created by sc on 2019-03-27.
+ *
+ *
  */
 public class VisableDemo {
 
@@ -19,6 +21,7 @@ public class VisableDemo {
            while (!stop){
                i++;
            }
+            System.out.println(i);
         });
         thread.start();
         TimeUnit.SECONDS.sleep(1);
