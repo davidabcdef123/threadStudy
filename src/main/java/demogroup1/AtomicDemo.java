@@ -10,7 +10,7 @@ public class AtomicDemo {
 
     private static int couut=0;
 
-    public static void inc(){
+    public   static void inc(){
         try {
             Thread.sleep(1);
         } catch (InterruptedException e) {
