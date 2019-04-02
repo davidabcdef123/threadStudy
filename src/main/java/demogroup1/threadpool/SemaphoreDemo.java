@@ -29,7 +29,9 @@ public class SemaphoreDemo {
         @Override
         public void run() {
             try {
-                semaphore.acquire();//获取一个令牌
+                //semaphore.acquire();//获取一个令牌
+
+                semaphore.tryAcquire();
                 System.out.println("第"+num+"个线程进入");
                 Thread.sleep(2000);
                 semaphore.release();//释放令牌
