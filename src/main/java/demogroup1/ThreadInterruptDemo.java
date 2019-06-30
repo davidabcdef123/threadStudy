@@ -9,6 +9,7 @@ public class ThreadInterruptDemo {
 
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(()->{
+            System.out.println("aaaaaaa");
             while (true){
                 boolean in=Thread.currentThread().isInterrupted();
                 if(in){
